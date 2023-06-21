@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header class="headtitle">
+    <div class="logo">
+        <img src="https://pkk.uma.ac.id/wp-content/uploads/2023/06/revo.png">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="profile.html">Our Profile</a></li>
+            <li><a href="#">Portofolio</a></li>
+            <li><a href="#message" id="messageLink">Message Us</a></li>
+        </ul>
+    </nav>
+</header>
+<br/>
+<br/>
+    <div class="wrapper">
+        <div class="slides">
+           <span id="slide-1"></span>
+           <span id="slide-2"></span>
+           <span id="slide-3"></span>
+           <span id="slide-4"></span>
+
+            <div class="images">
+            <img src="https://journal.revou.co/content/images/2022/10/10072022---Journal-Refresh-Banner-Kenalan.png">
+            <img src="https://journal.revou.co/content/images/2022/10/10072022---Journal-Refresh-Banner-Kenalan.png">
+            <img src="https://journal.revou.co/content/images/2022/10/10072022---Journal-Refresh-Banner-Kenalan.png">
+            <img src="https://journal.revou.co/content/images/2022/10/10072022---Journal-Refresh-Banner-Kenalan.png">
+            </div>
+        </div>
+        <!--navigasi-->
+        <div class="navigation">
+            <a href="#slide-1">1</a>
+            <a href="#slide-2">2</a>
+            <a href="#slide-3">3</a>
+            <a href="#slide-4">4</a>
+        </div>
+    </div>
+</body>
+<br/>
+<header class="country">
+    <h1>Our Headquarter</h1>
+</header>
+<body>
+    <div class="image-frame-container">
+        <div class="image-frame">
+            <img src="https://upload.wikimedia.org/wikipedia/id/thumb/b/b1/Merdeka_Square_Monas_02.jpg/800px-Merdeka_Square_Monas_02.jpg" alt="Gambar 1">
+            <div class="image-caption">Jakarta</div>
+        </div>
+        
+        <div class="image-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdhAMLeeseGKzsr6YLZITn4LMQVlkHBObMadR_Zf76gmFSq685P_bGV8xSUvhoWa5ulw&usqp=CAU" alt="Gambar 2">
+            <div class="image-caption">Palembang</div>
+        </div>
+        
+        <div class="image-frame">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/ca/76/1e/frontage.jpg?w=1200&h=1200&s=1" alt="Gambar 3">
+            <div class="image-caption">Bandung</div>
+        </div>
+    </div>
+<br/>
+<br/>
+<header class="Message" id="message">
+    <h1>Message Us</h1>
+</header>
+<div class="container">
+    <div class="profile">
+        <table class="profile-table">
+            <tr class="margin-top-1">
+                <td>Tanggal</td>
+                <td><input type="date" id="dob" placeholder="Masukkan tanggal hari ini"></td>
+            </tr>
+            <tr class="margin-top-1">
+                <td>Nama</td>
+                <td><input type="text" id="name" placeholder="Nama"></td>
+            </tr>
+            <tr class="margin-top-1">
+                <td>Jenis Kelamin</td>
+                <td>
+                    <select id="gender">
+                        <option value=""></option>
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="margin-top-1">
+                <td>Pesan</td>
+                <td><textarea id="w3review" name="w3review" rows="4" cols="50"></textarea></td>
+            </tr>
+            </div>
+        </table>
+        <div class="button-container">
+            <button onclick="saveProfile()">Submit</button>
+            <button onclick="hapusKonten()">Erase</button>
+            <button onclick="saveData()">Save</button>
+        </div>
+    </div>
+        <div class ="result" id="result"></div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+<script src="script.js"></script>
+</html>
